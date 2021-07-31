@@ -19,7 +19,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -36,7 +36,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -53,7 +53,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -70,7 +70,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -87,7 +87,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 android_app_import {
@@ -109,7 +109,7 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 android_app_import {
@@ -120,7 +120,7 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 android_app_import {
@@ -131,7 +131,7 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 android_app_import {
@@ -142,7 +142,7 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 android_app_import {
@@ -154,7 +154,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 android_app_import {
@@ -166,7 +166,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 android_app_import {
@@ -178,7 +178,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 android_app_import {
@@ -190,7 +190,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 android_app_import {
@@ -202,7 +202,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	specific: true,
+	system/system_ext_specific: true,
 }
 
 dex_import {
