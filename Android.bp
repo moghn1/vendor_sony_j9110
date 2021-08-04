@@ -185,7 +185,7 @@ android_app_import {
 dex_import {
 	name: "WfdCommon",
 	owner: "sony",
-	jars: ["proprietary/framework/WfdCommon.jar"],
+	jars: ["proprietary/system/framework/WfdCommon.jar"],
 }
 
 android_app_import {

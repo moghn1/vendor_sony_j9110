@@ -54,15 +54,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/system/bin/drmserver:$(TARGET_COPY_OUT_SYSTEM)/bin/drmserver \
     vendor/sony/j9110/proprietary/system/bin/sony-modem-switcher:$(TARGET_COPY_OUT_SYSTEM)/bin/sony-modem-switcher \
     vendor/sony/j9110/proprietary/system/etc/init/init.sony-modem-switcher.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sony-modem-switcher.rc \
-    vendor/sony/j9110/proprietary/system/etc/permissions/com.android.mediadrm.signer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.mediadrm.signer.xml \
     vendor/sony/j9110/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/sony/j9110/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/sony/j9110/proprietary/system/framework/WfdCommon.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/WfdCommon.jar \
-    vendor/sony/j9110/proprietary/system/framework/com.android.mediadrm.signer.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.android.mediadrm.signer.jar \
-    vendor/sony/j9110/proprietary/system/framework/oat/arm/com.android.mediadrm.signer.odex:$(TARGET_COPY_OUT_SYSTEM)/framework/oat/arm/com.android.mediadrm.signer.odex \
-    vendor/sony/j9110/proprietary/system/framework/oat/arm/com.android.mediadrm.signer.vdex:$(TARGET_COPY_OUT_SYSTEM)/framework/oat/arm/com.android.mediadrm.signer.vdex \
-    vendor/sony/j9110/proprietary/system/framework/oat/arm64/com.android.mediadrm.signer.odex:$(TARGET_COPY_OUT_SYSTEM)/framework/oat/arm64/com.android.mediadrm.signer.odex \
-    vendor/sony/j9110/proprietary/system/framework/oat/arm64/com.android.mediadrm.signer.vdex:$(TARGET_COPY_OUT_SYSTEM)/framework/oat/arm64/com.android.mediadrm.signer.vdex \
     vendor/sony/j9110/proprietary/system/lib/android.hardware.drm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.drm@1.0.so \
     vendor/sony/j9110/proprietary/system/lib/android.hardware.drm@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.drm@1.1.so \
     vendor/sony/j9110/proprietary/system/lib/android.hardware.drm@1.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.drm@1.2.so \
@@ -115,8 +109,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/system/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/sony/j9110/proprietary/system/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/sony/j9110/proprietary/system/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
-    vendor/sony/j9110/proprietary/system/system_ext/etc/permissions/qti_telephony_hidl_wrapper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_telephony_hidl_wrapper.xml \
-    vendor/sony/j9110/proprietary/system/system_ext/etc/permissions/qti_telephony_utils.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_telephony_utils.xml \
     vendor/sony/j9110/proprietary/system/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
     vendor/sony/j9110/proprietary/system/system_ext/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.dpmframework.jar \
     vendor/sony/j9110/proprietary/system/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
@@ -131,9 +123,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/system/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
     vendor/sony/j9110/proprietary/system/system_ext/framework/embmslibrary.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/embmslibrary.jar \
     vendor/sony/j9110/proprietary/system/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
-    vendor/sony/j9110/proprietary/system/system_ext/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qti-telephony-common.jar \
-    vendor/sony/j9110/proprietary/system/system_ext/framework/qti-telephony-hidl-wrapper.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qti-telephony-hidl-wrapper.jar \
-    vendor/sony/j9110/proprietary/system/system_ext/framework/qti-telephony-utils.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qti-telephony-utils.jar \
     vendor/sony/j9110/proprietary/system/system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar \
     vendor/sony/j9110/proprietary/system/system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar \
     vendor/sony/j9110/proprietary/system/system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.data.connection-V1.0-java.jar \
