@@ -8,15 +8,35 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/lib/vendor.somc.hardware.miscta@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.somc.hardware.miscta@1.0.so \
     vendor/sony/j9110/proprietary/lib64/vendor.somc.hardware.miscta@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.somc.hardware.miscta@1.0.so \
+    vendor/sony/j9110/proprietary/system/bin/sony-modem-fota-updater:$(TARGET_COPY_OUT_SYSTEM)/bin/sony-modem-fota-updater \
+    vendor/sony/j9110/proprietary/system/bin/sony-modem-switcher:$(TARGET_COPY_OUT_SYSTEM)/bin/sony-modem-switcher \
+    vendor/sony/j9110/proprietary/system/etc/customization/modem/amss_fs_empty.mbn:$(TARGET_COPY_OUT_SYSTEM)/etc/customization/modem/amss_fs_empty.mbn \
+    vendor/sony/j9110/proprietary/system/etc/customization/modem/amss_fsg_griffin_dsds_tar.mbn:$(TARGET_COPY_OUT_SYSTEM)/etc/customization/modem/amss_fsg_griffin_dsds_tar.mbn \
+    vendor/sony/j9110/proprietary/system/etc/customization/modem/default:$(TARGET_COPY_OUT_SYSTEM)/etc/customization/modem/default \
+    vendor/sony/j9110/proprietary/system/etc/customization/modem/reset_modemst1:$(TARGET_COPY_OUT_SYSTEM)/etc/customization/modem/reset_modemst1 \
+    vendor/sony/j9110/proprietary/system/etc/customization/modem/reset_modemst2:$(TARGET_COPY_OUT_SYSTEM)/etc/customization/modem/reset_modemst2 \
+    vendor/sony/j9110/proprietary/system/etc/init/init.sony-modem-switcher.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sony-modem-switcher.rc \
+    vendor/sony/j9110/proprietary/system/etc/init/init.sony-modem-updater.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sony-modem-updater.rc \
+    vendor/sony/j9110/proprietary/system/etc/permissions/com.nxp.nfc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.nxp.nfc.xml \
     vendor/sony/j9110/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/sony/j9110/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/sony/j9110/proprietary/system/framework/com.nxp.nfc.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.nxp.nfc.jar \
     vendor/sony/j9110/proprietary/system/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
+    vendor/sony/j9110/proprietary/system/lib/libnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnfc-nci.so \
+    vendor/sony/j9110/proprietary/system/lib/libnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnfc_nci_jni.so \
+    vendor/sony/j9110/proprietary/system/lib/vendor.somc.hardware.modemswitcher@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.somc.hardware.modemswitcher@1.0.so \
+    vendor/sony/j9110/proprietary/system/lib64/libnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc-nci.so \
+    vendor/sony/j9110/proprietary/system/lib64/libnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc_nci_jni.so \
+    vendor/sony/j9110/proprietary/system/lib64/vendor.somc.hardware.modemswitcher@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.somc.hardware.modemswitcher@1.0.so \
+    vendor/sony/j9110/proprietary/system/system_ext/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/system_ext/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.odex \
+    vendor/sony/j9110/proprietary/system/system_ext/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/system_ext/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.vdex \
+    vendor/sony/j9110/proprietary/system/system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.odex \
+    vendor/sony/j9110/proprietary/system/system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.vdex \
     vendor/sony/j9110/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/sony/j9110/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/sony/j9110/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/sony/j9110/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/sony/j9110/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
-    vendor/sony/j9110/proprietary/system/etc/permissions/com.nxp.nfc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.nxp.nfc.xml \
     vendor/sony/j9110/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/sony/j9110/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/sony/j9110/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
@@ -25,12 +45,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/sony/j9110/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
     vendor/sony/j9110/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
-    vendor/sony/j9110/proprietary/system/framework/com.nxp.nfc.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.nxp.nfc.jar \
     vendor/sony/j9110/proprietary/system_ext/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.dpmframework.jar \
     vendor/sony/j9110/proprietary/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
     vendor/sony/j9110/proprietary/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
     vendor/sony/j9110/proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
-    vendor/sony/j9110/proprietary/system_ext/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/sony/j9110/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/sony/j9110/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/sony/j9110/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
@@ -66,6 +84,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
+    vendor/sony/j9110/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
+    vendor/sony/j9110/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
@@ -77,8 +97,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
-    vendor/sony/j9110/proprietary/system/lib64/libnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc-nci.so \
-    vendor/sony/j9110/proprietary/system/lib64/libnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc_nci_jni.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdclient.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdcommonutils.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdconfigutils.so \
@@ -94,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/system_ext/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrc.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrcinterface.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
+    vendor/sony/j9110/proprietary/system_ext/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/sony/j9110/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/sony/j9110/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/sony/j9110/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
@@ -102,15 +121,13 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/sony/j9110/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/sony/j9110/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
-    vendor/sony/j9110/proprietary/vendor/bin/ipacm:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm \
-    vendor/sony/j9110/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
-    vendor/sony/j9110/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs \
     vendor/sony/j9110/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/sony/j9110/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/sony/j9110/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/sony/j9110/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
     vendor/sony/j9110/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/sony/j9110/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
+    vendor/sony/j9110/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
     vendor/sony/j9110/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
@@ -120,11 +137,14 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
     vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
-    vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-provision:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-provision \
     vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
     vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.semc.hardware.display@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.semc.hardware.display@1.0-service \
+    vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.semc.system.idd@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.semc.system.idd@1.0-service \
     vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.somc.hardware.miscta@1.0-service \
+    vendor/sony/j9110/proprietary/vendor/bin/hw/vendor.somc.hardware.modemswitcher@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.somc.hardware.modemswitcher@1.0-service \
+    vendor/sony/j9110/proprietary/vendor/bin/idd-logreader:$(TARGET_COPY_OUT_VENDOR)/bin/idd-logreader \
+    vendor/sony/j9110/proprietary/vendor/bin/iddd:$(TARGET_COPY_OUT_VENDOR)/bin/iddd \
     vendor/sony/j9110/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/sony/j9110/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/sony/j9110/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
@@ -156,11 +176,623 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/sony/j9110/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/sony/j9110/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/sony/j9110/proprietary/vendor/bin/vendor.qti.hardware.soter@1.0-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter@1.0-provision \
     vendor/sony/j9110/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
     vendor/sony/j9110/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/sony/j9110/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/sony/j9110/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/sony/j9110/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/CHI08BS1/bokeh_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/CHI08BS1/bokeh_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/color_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/color_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/dataflow.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/dataflow.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/exposure_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/exposure_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/exposure_ctrl_diagram.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/exposure_ctrl_diagram.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/eye_stabilizer.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/eye_stabilizer.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/face_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/face_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/face_detector_soda.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/face_detector_soda.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/flicker_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/flicker_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/food_comp_yummy.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/food_comp_yummy.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/food_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/food_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/fusion_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/fusion_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/fusion_comp_financier.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/fusion_comp_financier.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/fusion_comp_financier_coef.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/fusion_comp_financier_coef.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/fusion_comp_melonpan.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/fusion_comp_melonpan.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/fusion_comp_raisin.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/fusion_comp_raisin.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_bps_gamma16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_bps_gamma16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_fusion_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_fusion_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_abf34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_abf34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_abf34_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_abf34_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_bpcbcc50.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_bpcbcc50.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_cst12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_cst12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_gamma16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_gamma16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_gtm10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_gtm10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_hdr22.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_hdr22.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_linearization33.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_linearization33.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_lsc34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_lsc34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ife_pdpc11.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ife_pdpc11.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_cc13.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_cc13.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_cst12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_cst12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_cv12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_cv12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_gamma15.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_gamma15.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_ltm13.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_ltm13.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_tdl10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_tdl10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hal_ctrl_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hal_ctrl_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/hdr_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/hdr_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/idt_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/idt_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv_canele.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv_canele.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv_cheesescone.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv_cheesescone.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv_marble.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv_marble.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv_raisin.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv_raisin.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/image_conv_spica.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/image_conv_spica.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/lens_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/lens_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/lens_ctrl_common.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/lens_ctrl_common.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/motion_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/motion_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/motion_detector_sumomo.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/motion_detector_sumomo.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/motion_estimation.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/motion_estimation.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/multiframe_nr.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/multiframe_nr.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/multiframe_nr_melonpan.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/multiframe_nr_melonpan.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/multiframe_nr_mugichoco.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/multiframe_nr_mugichoco.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/multiframe_nr_toppo.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/multiframe_nr_toppo.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/object_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/object_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/object_tracker.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/object_tracker.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/prc_image_conv.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/prc_image_conv.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/process_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/process_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_conv_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_conv_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_conv_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_conv_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_conv_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_conv_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_conv_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_conv_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_conv_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_conv_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_conv_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_conv_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_conv_parisbrest.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_conv_parisbrest.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_conv_platform.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_conv_platform.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_conv_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_conv_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_bps_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_bps_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_bps_hnr10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_bps_hnr10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_bps_hnr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_bps_hnr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_platform.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_platform.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/raw_proc_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/raw_proc_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_bps_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_bps_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmb_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmb_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_bps_hnr10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_bps_hnr10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_bps_hnr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_bps_hnr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/rpmp_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/rpmp_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/scene_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/scene_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_0_EEPROM_FW_DATA_1.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_0_EEPROM_FW_DATA_1.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_0_EEPROM_FW_DATA_2.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_0_EEPROM_FW_DATA_2.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_0_EEPROM_FW_DATA_4.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_0_EEPROM_FW_DATA_4.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_0_EEPROM_FW_DATA_5.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_0_EEPROM_FW_DATA_5.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_0_EEPROM_FW_DATA_5M_1.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_0_EEPROM_FW_DATA_5M_1.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_0_EEPROM_FW_DATA_5M_2.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_0_EEPROM_FW_DATA_5M_2.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_0_EEPROM_FW_DATA_5M_4.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_0_EEPROM_FW_DATA_5M_4.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_0_EEPROM_FW_DATA_5M_5.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_0_EEPROM_FW_DATA_5M_5.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_1_EEPROM_FW_DATA_1.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_1_EEPROM_FW_DATA_1.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_1_EEPROM_FW_DATA_2.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_1_EEPROM_FW_DATA_2.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_1_EEPROM_FW_DATA_4.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_1_EEPROM_FW_DATA_4.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_1_EEPROM_FW_DATA_5.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_1_EEPROM_FW_DATA_5.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_1_EEPROM_FW_DATA_5M_1.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_1_EEPROM_FW_DATA_5M_1.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_1_EEPROM_FW_DATA_5M_2.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_1_EEPROM_FW_DATA_5M_2.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_1_EEPROM_FW_DATA_5M_4.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_1_EEPROM_FW_DATA_5M_4.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/MILVUS_1_EEPROM_FW_DATA_5M_5.dat:$(TARGET_COPY_OUT_VENDOR)/camera/MILVUS_1_EEPROM_FW_DATA_5M_5.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/bokeh_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/bokeh_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/color_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/color_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/dataflow.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/dataflow.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/exposure_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/exposure_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/exposure_ctrl_diagram.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/exposure_ctrl_diagram.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/eye_stabilizer.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/eye_stabilizer.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/face_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/face_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/face_detector_soda.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/face_detector_soda.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/flicker_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/flicker_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/food_comp_yummy.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/food_comp_yummy.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/food_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/food_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/fusion_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/fusion_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/fusion_comp_financier.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/fusion_comp_financier.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/fusion_comp_financier_coef.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/fusion_comp_financier_coef.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/fusion_comp_melonpan.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/fusion_comp_melonpan.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/fusion_comp_raisin.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/fusion_comp_raisin.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_bps_gamma16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_bps_gamma16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_fusion_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_fusion_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_abf34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_abf34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_abf34_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_abf34_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_bpcbcc50.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_bpcbcc50.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_cst12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_cst12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_gamma16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_gamma16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_gtm10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_gtm10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_hdr22.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_hdr22.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_linearization33.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_linearization33.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_lsc34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_lsc34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ife_pdpc11.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ife_pdpc11.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_cc13.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_cc13.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_cst12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_cst12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_cv12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_cv12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_gamma15.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_gamma15.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_ltm13.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_ltm13.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_tdl10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_tdl10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hal_ctrl_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hal_ctrl_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/hdr_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/hdr_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/idt_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/idt_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv_canele.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv_canele.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv_cheesescone.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv_cheesescone.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv_marble.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv_marble.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv_raisin.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv_raisin.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/image_conv_spica.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/image_conv_spica.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/lens_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/lens_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/lens_ctrl_common.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/lens_ctrl_common.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/motion_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/motion_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/motion_detector_sumomo.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/motion_detector_sumomo.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/motion_estimation.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/motion_estimation.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/multiframe_nr.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/multiframe_nr.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/multiframe_nr_melonpan.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/multiframe_nr_melonpan.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/multiframe_nr_mugichoco.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/multiframe_nr_mugichoco.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/multiframe_nr_toppo.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/multiframe_nr_toppo.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/object_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/object_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/object_tracker.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/object_tracker.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/prc_image_conv.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/prc_image_conv.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/process_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/process_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_conv_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_conv_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_conv_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_conv_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_conv_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_conv_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_conv_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_conv_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_conv_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_conv_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_conv_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_conv_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_conv_parisbrest.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_conv_parisbrest.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_conv_platform.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_conv_platform.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_conv_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_conv_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_bps_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_bps_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_bps_hnr10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_bps_hnr10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_bps_hnr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_bps_hnr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_platform.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_platform.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/raw_proc_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/raw_proc_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_bps_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_bps_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmb_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmb_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_bps_hnr10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_bps_hnr10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_bps_hnr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_bps_hnr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/rpmp_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/rpmp_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS1/scene_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS1/scene_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/bokeh_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/bokeh_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/color_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/color_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/dataflow.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/dataflow.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/exposure_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/exposure_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/exposure_ctrl_diagram.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/exposure_ctrl_diagram.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/eye_stabilizer.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/eye_stabilizer.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/face_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/face_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/face_detector_soda.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/face_detector_soda.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/flicker_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/flicker_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/food_comp_yummy.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/food_comp_yummy.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/food_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/food_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/fusion_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/fusion_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/fusion_comp_financier.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/fusion_comp_financier.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/fusion_comp_financier_coef.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/fusion_comp_financier_coef.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/fusion_comp_melonpan.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/fusion_comp_melonpan.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/fusion_comp_raisin.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/fusion_comp_raisin.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_bps_gamma16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_bps_gamma16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_fusion_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_fusion_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_abf34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_abf34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_abf34_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_abf34_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_bpcbcc50.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_bpcbcc50.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_cst12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_cst12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_gamma16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_gamma16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_gtm10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_gtm10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_hdr22.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_hdr22.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_linearization33.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_linearization33.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_lsc34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_lsc34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ife_pdpc11.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ife_pdpc11.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_cc13.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_cc13.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_cst12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_cst12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_cv12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_cv12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_gamma15.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_gamma15.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_ltm13.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_ltm13.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_tdl10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_tdl10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hal_ctrl_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hal_ctrl_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/hdr_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/hdr_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/idt_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/idt_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv_canele.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv_canele.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv_cheesescone.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv_cheesescone.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv_marble.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv_marble.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv_raisin.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv_raisin.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/image_conv_spica.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/image_conv_spica.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/lens_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/lens_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/lens_ctrl_common.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/lens_ctrl_common.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/motion_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/motion_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/motion_detector_sumomo.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/motion_detector_sumomo.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/motion_estimation.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/motion_estimation.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/multiframe_nr.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/multiframe_nr.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/multiframe_nr_melonpan.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/multiframe_nr_melonpan.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/multiframe_nr_mugichoco.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/multiframe_nr_mugichoco.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/multiframe_nr_toppo.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/multiframe_nr_toppo.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/object_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/object_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/object_tracker.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/object_tracker.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/prc_image_conv.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/prc_image_conv.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/process_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/process_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_conv_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_conv_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_conv_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_conv_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_conv_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_conv_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_conv_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_conv_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_conv_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_conv_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_conv_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_conv_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_conv_parisbrest.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_conv_parisbrest.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_conv_platform.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_conv_platform.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_conv_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_conv_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_bps_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_bps_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_bps_hnr10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_bps_hnr10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_bps_hnr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_bps_hnr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_platform.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_platform.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/raw_proc_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/raw_proc_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_bps_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_bps_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmb_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmb_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_bps_hnr10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_bps_hnr10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_bps_hnr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_bps_hnr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/rpmp_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/rpmp_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SEM12BS2/scene_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM12BS2/scene_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SODA_HMN_BN0010-0001:$(TARGET_COPY_OUT_VENDOR)/camera/SODA_HMN_BN0010-0001 \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/bokeh_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/bokeh_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/color_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/color_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/dataflow.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/dataflow.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/exposure_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/exposure_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/exposure_ctrl_diagram.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/exposure_ctrl_diagram.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/eye_stabilizer.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/eye_stabilizer.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/face_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/face_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/face_detector_soda.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/face_detector_soda.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/flicker_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/flicker_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/food_comp_yummy.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/food_comp_yummy.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/food_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/food_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/fusion_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/fusion_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/fusion_comp_financier.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/fusion_comp_financier.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/fusion_comp_financier_coef.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/fusion_comp_financier_coef.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/fusion_comp_melonpan.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/fusion_comp_melonpan.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/fusion_comp_raisin.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/fusion_comp_raisin.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_bps_gamma16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_bps_gamma16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_fusion_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_fusion_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_abf34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_abf34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_abf34_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_abf34_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_bpcbcc50.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_bpcbcc50.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_cst12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_cst12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_gamma16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_gamma16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_gtm10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_gtm10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_hdr22.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_hdr22.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_linearization33.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_linearization33.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_lsc34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_lsc34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ife_pdpc11.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ife_pdpc11.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_cc13.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_cc13.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_cst12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_cst12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_cv12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_cv12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_gamma15.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_gamma15.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_ltm13.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_ltm13.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_tdl10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_tdl10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hal_ctrl_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hal_ctrl_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/hdr_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/hdr_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/idt_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/idt_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv_canele.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv_canele.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv_cheesescone.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv_cheesescone.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv_marble.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv_marble.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv_raisin.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv_raisin.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/image_conv_spica.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/image_conv_spica.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/lens_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/lens_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/lens_ctrl_common.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/lens_ctrl_common.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/motion_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/motion_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/motion_detector_sumomo.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/motion_detector_sumomo.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/motion_estimation.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/motion_estimation.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/multiframe_nr.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/multiframe_nr.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/multiframe_nr_melonpan.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/multiframe_nr_melonpan.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/multiframe_nr_mugichoco.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/multiframe_nr_mugichoco.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/multiframe_nr_toppo.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/multiframe_nr_toppo.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/object_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/object_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/object_tracker.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/object_tracker.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/prc_image_conv.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/prc_image_conv.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/process_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/process_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_conv_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_conv_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_conv_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_conv_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_conv_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_conv_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_conv_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_conv_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_conv_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_conv_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_conv_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_conv_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_conv_parisbrest.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_conv_parisbrest.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_conv_platform.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_conv_platform.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_conv_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_conv_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_bps_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_bps_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_bps_hnr10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_bps_hnr10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_bps_hnr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_bps_hnr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_platform.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_platform.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/raw_proc_platform_nree.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/raw_proc_platform_nree.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_bps_abf40.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_bps_abf40.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_bps_abf40_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_bps_abf40_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_bps_bls12.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_bps_bls12.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_bps_demosaic36.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_bps_demosaic36.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_bps_gic30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_bps_gic30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_bps_linearization34.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_bps_linearization34.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_bps_pdpc20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_bps_pdpc20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmb_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmb_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_bps_hnr10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_bps_hnr10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_bps_hnr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_bps_hnr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_anr10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_anr10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_anr10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_anr10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_anr10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_anr10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_anr10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_anr10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_anr10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_anr10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_asf30.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_asf30.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_cs20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_cs20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_gra10.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_gra10.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_tf10_dc04.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_tf10_dc04.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_tf10_dc16.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_tf10_dc16.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_tf10_dc64.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_tf10_dc64.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_tf10_disable.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_tf10_disable.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_tf10_full.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_tf10_full.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/rpmp_ipe_upscale20.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/rpmp_ipe_upscale20.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/SUN13BS1/scene_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SUN13BS1/scene_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/default.dat:$(TARGET_COPY_OUT_VENDOR)/camera/default.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/display_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/display_ctrl.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/file_animal_eye_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/file_animal_eye_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/file_face_detector.dat:$(TARGET_COPY_OUT_VENDOR)/camera/file_face_detector.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/flash.dat:$(TARGET_COPY_OUT_VENDOR)/camera/flash.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/optical_zoom.dat:$(TARGET_COPY_OUT_VENDOR)/camera/optical_zoom.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/snapshot.dat:$(TARGET_COPY_OUT_VENDOR)/camera/snapshot.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/streaming.dat:$(TARGET_COPY_OUT_VENDOR)/camera/streaming.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/supported.dat:$(TARGET_COPY_OUT_VENDOR)/camera/supported.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/version.dat:$(TARGET_COPY_OUT_VENDOR)/camera/version.dat \
     vendor/sony/j9110/proprietary/vendor/etc/acdbdata/Sony_kumano_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Sony_kumano_Bluetooth_cal.acdb \
     vendor/sony/j9110/proprietary/vendor/etc/acdbdata/Sony_kumano_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Sony_kumano_General_cal.acdb \
     vendor/sony/j9110/proprietary/vendor/etc/acdbdata/Sony_kumano_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Sony_kumano_Global_cal.acdb \
@@ -212,6 +844,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/etc/firmware/tztpm.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.b06 \
     vendor/sony/j9110/proprietary/vendor/etc/firmware/tztpm.b07:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.b07 \
     vendor/sony/j9110/proprietary/vendor/etc/firmware/tztpm.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.mdt \
+    vendor/sony/j9110/proprietary/vendor/etc/idd.fstab:$(TARGET_COPY_OUT_VENDOR)/etc/idd.fstab \
+    vendor/sony/j9110/proprietary/vendor/etc/iddd_user.conf:$(TARGET_COPY_OUT_VENDOR)/etc/iddd_user.conf \
     vendor/sony/j9110/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
@@ -219,6 +853,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
+    vendor/sony/j9110/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -230,12 +865,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/init.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.rc \
+    vendor/sony/j9110/proprietary/vendor/etc/init/init.sony.idd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sony.idd.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/init.taqmi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.taqmi.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
-    vendor/sony/j9110/proprietary/vendor/etc/init/ipacm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm.rc \
-    vendor/sony/j9110/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
@@ -258,9 +892,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/vendor.semc.hardware.display@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.display@1.0-service.rc \
+    vendor/sony/j9110/proprietary/vendor/etc/init/vendor.semc.system.idd@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.system.idd@1.0-service.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.somc.hardware.miscta@1.0-service.rc \
+    vendor/sony/j9110/proprietary/vendor/etc/init/vendor.somc.hardware.modemswitcher@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.somc.hardware.modemswitcher@1.0-service.rc \
     vendor/sony/j9110/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/sony/j9110/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/sony/j9110/proprietary/vendor/etc/libnfc-nxp-octopus_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-octopus_RF.conf \
@@ -272,6 +908,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/sony/j9110/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/sony/j9110/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
+    vendor/sony/j9110/proprietary/vendor/etc/permissions/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
     vendor/sony/j9110/proprietary/vendor/etc/permissions/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
     vendor/sony/j9110/proprietary/vendor/etc/permissions/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
     vendor/sony/j9110/proprietary/vendor/etc/permissions/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
@@ -321,6 +958,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/sony/j9110/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/sony/j9110/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
+    vendor/sony/j9110/proprietary/vendor/etc/security/idd_config.pem:$(TARGET_COPY_OUT_VENDOR)/etc/security/idd_config.pem \
+    vendor/sony/j9110/proprietary/vendor/etc/security/idd_report.pem:$(TARGET_COPY_OUT_VENDOR)/etc/security/idd_report.pem \
     vendor/sony/j9110/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/sony/j9110/proprietary/vendor/etc/sensors/registry/config/bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/bmp380_0.json \
     vendor/sony/j9110/proprietary/vendor/etc/sensors/registry/config/lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/lsm6dsm_0.json \
@@ -391,6 +1030,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/sony/j9110/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/sony/j9110/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
+    vendor/sony/j9110/proprietary/vendor/etc/vintf/manifest/vendor.semc.system.idd.manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.semc.system.idd.manifest.xml \
     vendor/sony/j9110/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/sony/j9110/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/sony/j9110/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
@@ -441,6 +1081,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/firmware/tzwvcpybuf.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/tzwvcpybuf.b07 \
     vendor/sony/j9110/proprietary/vendor/firmware/tzwvcpybuf.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/tzwvcpybuf.mdt \
     vendor/sony/j9110/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
+    vendor/sony/j9110/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
+    vendor/sony/j9110/proprietary/vendor/lib/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl.so \
     vendor/sony/j9110/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
     vendor/sony/j9110/proprietary/vendor/lib/camera/com.qti.tuned.default_full_iq.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default_full_iq.bin \
     vendor/sony/j9110/proprietary/vendor/lib/camera/com.sony.sensormodule.goby_s5k3m3sn.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.sony.sensormodule.goby_s5k3m3sn.bin \
@@ -459,6 +1101,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/sony/j9110/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
     vendor/sony/j9110/proprietary/vendor/lib/hal_libnfc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hal_libnfc.so \
+    vendor/sony/j9110/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/sony/j9110/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
     vendor/sony/j9110/proprietary/vendor/lib/hw/audio.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msmnile.so \
     vendor/sony/j9110/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
@@ -495,6 +1138,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/sony/j9110/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/sony/j9110/proprietary/vendor/lib/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVkLayer_q3dtools.so \
+    vendor/sony/j9110/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
     vendor/sony/j9110/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/sony/j9110/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/sony/j9110/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
@@ -508,6 +1152,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
     vendor/sony/j9110/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
     vendor/sony/j9110/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
     vendor/sony/j9110/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/sony/j9110/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/sony/j9110/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
@@ -524,6 +1170,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
     vendor/sony/j9110/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/sony/j9110/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libidd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidd.so \
     vendor/sony/j9110/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/sony/j9110/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
     vendor/sony/j9110/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
@@ -531,13 +1179,18 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/sony/j9110/proprietary/vendor/lib/libmiscta.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmiscta.so \
     vendor/sony/j9110/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-hdcpmgr.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
     vendor/sony/j9110/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
     vendor/sony/j9110/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
     vendor/sony/j9110/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libmorpho_dual_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_dual_camera.so \
     vendor/sony/j9110/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
     vendor/sony/j9110/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     vendor/sony/j9110/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
     vendor/sony/j9110/proprietary/vendor/lib/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfioctl.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libprotobuf-c-idd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-c-idd.so \
     vendor/sony/j9110/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     vendor/sony/j9110/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
     vendor/sony/j9110/proprietary/vendor/lib/libqcodec2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2.so \
@@ -563,6 +1216,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
     vendor/sony/j9110/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/sony/j9110/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libsomc_camerahal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomc_camerahal.so \
+    vendor/sony/j9110/proprietary/vendor/lib/libsomc_camerapal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomc_camerapal.so \
     vendor/sony/j9110/proprietary/vendor/lib/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssrec.so \
     vendor/sony/j9110/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
     vendor/sony/j9110/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
@@ -589,7 +1244,51 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrc_proprietary.so \
     vendor/sony/j9110/proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrcinterface_proprietary.so \
     vendor/sony/j9110/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
+    vendor/sony/j9110/proprietary/vendor/lib/local_libcamera_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/local_libcamera_metadata.so \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_adsp_loader.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_adsp_loader.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_ahc.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_ahc.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_apr.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_apr.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_effect.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_effect.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_effect_params.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_effect_params.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_hdmi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_hdmi.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_machine_msmnile.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_machine_msmnile.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_mbhc.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_mbhc.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_native.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_native.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_pinctrl_wcd.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_pinctrl_wcd.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_platform.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_platform.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_q6.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_q6.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_q6_notifier.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_q6_notifier.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_q6_pdr.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_q6_pdr.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_stub.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_stub.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_swr.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_swr.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_swr_ctrl.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_swr_ctrl.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_usf.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_usf.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_wcd934x.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wcd934x.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_wcd9360.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wcd9360.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_wcd9xxx.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wcd9xxx.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_wcd_core.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wcd_core.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_wcd_spi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wcd_spi.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_wglink.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wglink.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/audio_wsa881x.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wsa881x.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/bu520x1nvx.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/bu520x1nvx.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/camera_sync.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/camera_sync.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/et580-int.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/et580-int.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/flash_led.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/flash_led.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/last_logs.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/last_logs.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/mpq-adapter.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/mpq-adapter.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/mpq-dmx-hw-plugin.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/mpq-dmx-hw-plugin.ko \
     vendor/sony/j9110/proprietary/vendor/lib/modules/nxp_pn553_nfc.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/nxp_pn553_nfc.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/powerkey_forcecrash.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/powerkey_forcecrash.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/qca_cld3_wlan.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/qca_cld3_wlan.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/rdbg.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/rdbg.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/rmnet_perf.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/rmnet_perf.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/rmnet_shs.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/rmnet_shs.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/sec_touchscreen.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/sec_touchscreen.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/sony_camera.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/sony_camera.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/tcs3490.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/tcs3490.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/texfat.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/texfat.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/modules/tspp.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/tspp.ko \
+    vendor/sony/j9110/proprietary/vendor/lib/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci_nxp.so \
     vendor/sony/j9110/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so \
     vendor/sony/j9110/proprietary/vendor/lib/rfsa/adsp/libVC1Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1Dec.so \
     vendor/sony/j9110/proprietary/vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1DecDsp_skel.so \
@@ -614,16 +1313,34 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
     vendor/sony/j9110/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
     vendor/sony/j9110/proprietary/vendor/lib/vendor.nxp.nxpnfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpnfc@2.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.nxp.nxpnfclegacy@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.nxpnfclegacy@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccvndhal@1.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.soter@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
     vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.3.so \
     vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.semc.system.idd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.semc.system.idd@1.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.camera.device@3.2-impl.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.camera.device@3.3-impl.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.camera.device@3.4-impl.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.hardware.camera.cacao@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.camera.cacao@1.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.hardware.camera.cacao@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.camera.cacao@2.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.hardware.camera.cacao@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.camera.cacao@3.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.hardware.camera.cacao@3.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.camera.cacao@3.1.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.hardware.camera.cacao@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.camera.cacao@3.2-impl.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.hardware.camera.cacao@3.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.camera.cacao@3.2.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.camera.device@1.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib/vendor.somc.hardware.camera.provider@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.camera.provider@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
     vendor/sony/j9110/proprietary/vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.truly_cmb433.so \
     vendor/sony/j9110/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
     vendor/sony/j9110/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -642,6 +1359,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/sony/j9110/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/sony/j9110/proprietary/vendor/lib64/ese_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_client.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/ese_spi_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_spi_nxp.so \
     vendor/sony/j9110/proprietary/vendor/lib64/hal_libnfc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hal_libnfc.so \
     vendor/sony/j9110/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/sony/j9110/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
@@ -649,6 +1367,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
     vendor/sony/j9110/proprietary/vendor/lib64/hw/audio.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.msmnile.so \
     vendor/sony/j9110/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/hw/hwcomposer.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.msmnile.so \
     vendor/sony/j9110/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/sony/j9110/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/sony/j9110/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
@@ -711,6 +1430,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov7.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov8.so \
@@ -722,6 +1442,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/libchrome.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchrome.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
@@ -733,6 +1454,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
@@ -750,7 +1472,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/libidd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidd.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
@@ -791,6 +1515,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/libprotobuf-c-idd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-c-idd.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
@@ -837,7 +1562,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmcore.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
@@ -850,6 +1577,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/libsomc_camerapal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomc_camerapal.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspcom.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspl.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
@@ -873,6 +1601,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/sony/j9110/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
     vendor/sony/j9110/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxp.so \
     vendor/sony/j9110/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/sony/j9110/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/sony/j9110/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
@@ -891,6 +1620,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@4.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.eventprocessor@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.nxp.nxpnfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@2.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfclegacy@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \
@@ -906,6 +1636,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.gnss@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
@@ -918,7 +1649,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
-    vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
@@ -964,7 +1694,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/vendor.semc.system.idd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.system.idd@1.0.so \
     vendor/sony/j9110/proprietary/vendor/lib64/vendor.somc.hardware.miscta@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.miscta@1.0.so \
+    vendor/sony/j9110/proprietary/vendor/lib64/vendor.somc.hardware.modemswitcher@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.modemswitcher@1.0.so \
     vendor/sony/j9110/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/sony/j9110/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/sony/j9110/proprietary/vendor/radio/qcril_database/upgrade/1_version_intro.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/1_version_intro.sql \
@@ -973,7 +1705,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/sony/j9110/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
     vendor/sony/j9110/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql \
-    vendor/sony/j9110/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql \
+    vendor/sony/j9110/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
     libfastcvopt \
@@ -988,7 +1720,6 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
-    qcnvitems \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \

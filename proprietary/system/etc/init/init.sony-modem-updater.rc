@@ -1,0 +1,12 @@
+# Copyright (C) 2018 Sony Mobile Communications Inc.
+# All rights, including trade secret rights, reserved.
+
+# Modem-updater service
+service modem_updater /system/bin/sony-modem-fota-updater
+    user root
+    group root system
+    disabled
+    oneshot
+
+on boot
+    exec_start modem_updater
