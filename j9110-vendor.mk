@@ -21,6 +21,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/sony/j9110/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/sony/j9110/proprietary/system/framework/com.nxp.nfc.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.nxp.nfc.jar \
+    vendor/sony/j9110/proprietary/system/framework/oat/arm/com.nxp.nfc.odex:$(TARGET_COPY_OUT_SYSTEM)/framework/oat/arm/com.nxp.nfc.odex \
+    vendor/sony/j9110/proprietary/system/framework/oat/arm/com.nxp.nfc.vdex:$(TARGET_COPY_OUT_SYSTEM)/framework/oat/arm/com.nxp.nfc.vdex \
+    vendor/sony/j9110/proprietary/system/framework/oat/arm64/com.nxp.nfc.odex:$(TARGET_COPY_OUT_SYSTEM)/framework/oat/arm64/com.nxp.nfc.odex \
+    vendor/sony/j9110/proprietary/system/framework/oat/arm64/com.nxp.nfc.vdex:$(TARGET_COPY_OUT_SYSTEM)/framework/oat/arm64/com.nxp.nfc.vdex \
     vendor/sony/j9110/proprietary/system/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
     vendor/sony/j9110/proprietary/system/lib/libnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnfc-nci.so \
     vendor/sony/j9110/proprietary/system/lib/libnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnfc_nci_jni.so \
@@ -28,10 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/system/lib64/libnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc-nci.so \
     vendor/sony/j9110/proprietary/system/lib64/libnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc_nci_jni.so \
     vendor/sony/j9110/proprietary/system/lib64/vendor.somc.hardware.modemswitcher@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.somc.hardware.modemswitcher@1.0.so \
-    vendor/sony/j9110/proprietary/system/system_ext/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/system_ext/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.odex \
-    vendor/sony/j9110/proprietary/system/system_ext/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/system_ext/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.vdex \
-    vendor/sony/j9110/proprietary/system/system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.odex \
-    vendor/sony/j9110/proprietary/system/system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.vdex \
     vendor/sony/j9110/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/sony/j9110/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/sony/j9110/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
@@ -47,6 +47,14 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/sony/j9110/proprietary/system_ext/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.dpmframework.jar \
     vendor/sony/j9110/proprietary/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
+    vendor/sony/j9110/proprietary/system_ext/framework/oat/arm/qcrilhook.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm/qcrilhook.odex \
+    vendor/sony/j9110/proprietary/system_ext/framework/oat/arm/qcrilhook.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm/qcrilhook.vdex \
+    vendor/sony/j9110/proprietary/system_ext/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.odex \
+    vendor/sony/j9110/proprietary/system_ext/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm/vendor.qti.hardware.alarm-V1.0-java.vdex \
+    vendor/sony/j9110/proprietary/system_ext/framework/oat/arm64/qcrilhook.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/qcrilhook.odex \
+    vendor/sony/j9110/proprietary/system_ext/framework/oat/arm64/qcrilhook.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/qcrilhook.vdex \
+    vendor/sony/j9110/proprietary/system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.odex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.odex \
+    vendor/sony/j9110/proprietary/system_ext/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.vdex:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/vendor.qti.hardware.alarm-V1.0-java.vdex \
     vendor/sony/j9110/proprietary/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
     vendor/sony/j9110/proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
     vendor/sony/j9110/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
@@ -182,7 +190,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/j9110/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/sony/j9110/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/sony/j9110/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
-    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/CHI08BS1/bokeh_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/CHI08BS1/bokeh_comp.dat \
+    vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/bokeh_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/bokeh_comp.dat \
     vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/color_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/color_ctrl.dat \
     vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/dataflow.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/dataflow.dat \
     vendor/sony/j9110/proprietary/vendor/camera/CHI08BS1/exposure_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/exposure_ctrl.dat \
